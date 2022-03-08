@@ -452,7 +452,7 @@ def isReady(event):
  
 def chooseFile():
 	global image, frame, img_original, factorX, factorY
-	root.filename = filedialog.askopenfilename(initialdir= 'C:/Users/taver/OneDrive/Рабочий стол/letter recognition', title = 'Select a file', filetypes=(("png files", "*.png"),("all files", "*.jpeg")))
+	root.filename = filedialog.askopenfilename(initialdir= 'C:/Users', title = 'Select a file', filetypes=(("png files", "*.png"),("all files", "*.jpeg")))
 	img_original = Image.open(root.filename)
 	img = img_original.resize((511,700))
 	image = ImageTk.PhotoImage(img)
